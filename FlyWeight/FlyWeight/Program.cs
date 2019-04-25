@@ -16,7 +16,13 @@ namespace FlyWeight
             cashier.CashIn(0.01, EMoneyType.Coin);
             //cashier.CashIn(0.02, EMoneyType.Coin);
             cashier.CashIn(123.0, EMoneyType.Card);
+
+
             
+            Console.WriteLine(cashier.GetTotalCash());
+
+            cashier.CashOut(10, EMoneyType.Card);
+
             Console.WriteLine(cashier.GetTotalCash());
 
         }
